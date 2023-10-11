@@ -38,23 +38,27 @@ const Authenticated = ({setUserToken}) => {
       inactiveColor={THEME.colors.musgo}
       activeColor={THEME.colors.dark}>
       <Tab.Screen
-        name="Home"
+        name="Editor"
         component={Home}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Editor',
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
         }}
       />
       <Tab.Screen
-        name="Favoritos"
+        name="Notes"
         initialParams={{setUserToken}}
         component={Search}
         options={{
-          tabBarLabel: 'Favoritos',
+          tabBarLabel: 'Notes',
           tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="heart" color={color} size={26} />
+            <MaterialCommunityIcons
+              name="playlist-edit"
+              color={color}
+              size={26}
+            />
           ),
         }}
       />
