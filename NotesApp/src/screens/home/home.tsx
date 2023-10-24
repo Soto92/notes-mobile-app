@@ -27,7 +27,7 @@ const Home = () => {
         value={text}
         multiline={true}
         numberOfLines={4}
-        onChangeText={arg => setText(text + arg)}
+        onChangeText={arg => setText(arg)}
       />
       <Button
         icon="content-save"
